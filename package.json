@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha --require babel-core/register"
   },
   "author": "Eric Zhao",
   "license": "ISC",
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
-    "babel-register": "^6.26.0"
+    "babel-register": "^6.26.0",
+    "mocha": "^4.0.1"
   }
 }

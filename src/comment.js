@@ -1,5 +1,3 @@
-import fs from 'fs';
-
 export default function (text, lineLength) {
   // TODO: Implement support for linebreaks in comments
   const tokens = text.split(/ |\n/);
@@ -18,10 +16,5 @@ export default function (text, lineLength) {
   }
   result += ' */\n';
 
-  fs.writeFile('output/comment.txt', result, function(err) {
-    if(err) {
-      return console.log(err);
-    }
-    console.log('The comment was saved as a file!');
-  });
+  return result;
 }
